@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondo" />
+
+    <ImageView
+        android:id="@+id/carpeta"
+        android:layout_width="441dp"
+        android:layout_height="303dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/carpeta" />
+
+    <ImageView
+        android:id="@+id/hojaBase"
+        android:layout_width="184dp"
+        android:layout_height="269dp"
+        android:layout_marginLeft="367dp"
+        android:layout_marginTop="69dp"
+        app:srcCompat="@drawable/hoja" />
+
+    <ImageView
+        android:id="@+id/selloCIA"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="369dp"
+        android:layout_marginTop="83dp"
+        app:srcCompat="@drawable/sello_cia"
+        android:rotation="-37"/>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Central Intelligence Agency"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="423dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/special_elite"
+        android:text="United States of America"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="410dp"
+        android:layout_marginTop="113dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Expediente N°: MK-31482-F"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="127dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Nombre completo: Dr. Alan Wexler"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="137dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Edad: 47 años"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="147dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Nacionalidad: Estadounidense"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="157dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Clasificación de seguridad: Nivel 6"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="167dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Estado actual: Desaparecido desde 1972"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Observaciones: "
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/t10"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="193dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Presenta altos niveles de inteligencia, gran conocimiento de farmacología experimental."
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t11"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="223dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Evaluado psicológicamente en 1968: diagnostico de trastorno narcisista encubierto."
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/t12"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="253dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Podría tener información sobre los subproyectos BLUE-GLASS y ACOUSTIC-PULSE."
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/fondoFoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="472dp"
+        android:layout_marginTop="263dp"
+        app:srcCompat="@drawable/fondofoto" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="490dp"
+        android:layout_marginTop="273dp"
+        app:srcCompat="@drawable/cient1" />
+
+
+</FrameLayout>
