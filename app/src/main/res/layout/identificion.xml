@@ -21,7 +21,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="170dp"
         app:srcCompat="@drawable/personaje"
-        android:background=""/>
+        android:background="@android:color/transparent" />
 
     <TextView
         android:id="@+id/cia"
@@ -61,14 +61,16 @@
         android:textColor="#192B85"
         android:textSize="24sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/nombreEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
         android:layout_marginLeft="390dp"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="200dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="Jugador" />
+
 
     <TextView
         android:id="@+id/designacion"

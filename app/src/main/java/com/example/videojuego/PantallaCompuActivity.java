@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import android.view.KeyEvent;
+
 
 public class PantallaCompuActivity extends AppCompatActivity {
 
@@ -27,16 +29,11 @@ public class PantallaCompuActivity extends AppCompatActivity {
             String nombre = usuarioInput.getText().toString().trim();
             if (!nombre.isEmpty()) {
                 guardarNombre(nombre);
-                Toast.makeText(this, "Nombre guardado", Toast.LENGTH_SHORT).show();
 
-                // Ir a la siguiente pantalla y pasar el nombre
-                    //Intent intent = new Intent(this, JuegoActivity.class);
-                    //intent.putExtra("nombreJugador", nombre);
-                    //startActivity(intent);
-                Toast.makeText(this, "Nombre guardado", Toast.LENGTH_SHORT).show();
-                // Puedes ir a MainActivity si lo deseas
-                // Intent intent = new Intent(this, MainActivity.class);
-                // startActivity(intent);
+                // Ir a la pantalla de identificación
+                Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
+                intent.putExtra("nombreJugador", nombre);
+                startActivity(intent);
                 finish();
             } else {
                 Toast.makeText(this, "Por favor ingresa un nombre", Toast.LENGTH_SHORT).show();
@@ -51,4 +48,14 @@ public class PantallaCompuActivity extends AppCompatActivity {
         db.insert(BaseDeDatosHelper.TABLA_USUARIO, null, valores);
         db.close();
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 }
