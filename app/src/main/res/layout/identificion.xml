@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="390dp"
         android:layout_marginTop="200dp"
-        android:textColor="#FFFFFF"
+        android:textColor="#0D0D0D"
         android:textSize="24sp"
         android:text="Jugador" />
 

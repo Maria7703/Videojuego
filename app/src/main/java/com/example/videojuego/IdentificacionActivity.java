@@ -23,6 +23,13 @@ public class IdentificacionActivity extends AppCompatActivity {
         String nombre = getIntent().getStringExtra("nombreJugador");
         nombreEntry.setText(nombre);
 
+        // Mostrar el nombre en el TextView
+        if (nombre != null && !nombre.isEmpty()) {
+            nombreEntry.setText("Jugador: " + nombre);
+        } else {
+            nombreEntry.setText("Jugador desconocido");
+        }
+
         // Esperar 3 segundos y pasar a la pantalla del juego
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(IdentificacionActivity.this, DemoActivity.class);
