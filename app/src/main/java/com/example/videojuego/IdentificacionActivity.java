@@ -25,7 +25,7 @@ public class IdentificacionActivity extends AppCompatActivity {
 
         // Mostrar el nombre en el TextView
         if (nombre != null && !nombre.isEmpty()) {
-            nombreEntry.setText("Jugador: " + nombre);
+            nombreEntry.setText("" + nombre);
         } else {
             nombreEntry.setText("Jugador desconocido");
         }
