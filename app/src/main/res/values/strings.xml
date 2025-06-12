@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Videojuego</string>
+    <string name="texto_sello">el sello <font color='#FF0000'>R</font>-01 por la CIA.</string>
+    <string name="letraE">El protocolo <font color='#FF0000'>E</font>-1953 fue el primero en</string>
+    <string name="letraA"><font color='#FF0000'>A</font>-62 como amenaza.</string>
+    <string name="letraL">La sección <font color='#FF0000'>L</font> del archivo contenía la</string>
+    <string name="letraS">ción <font color='#FF0000'>S</font> -02 por Langley.</string>
 </resources>
