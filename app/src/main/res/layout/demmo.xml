@@ -31,244 +31,1136 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/carpeta" />
 
-    <ImageView
-        android:id="@+id/hoja"
-        android:layout_width="241dp"
-        android:layout_height="293dp"
-        app:layout_constraintBottom_toBottomOf="@+id/carpeta"
-        app:layout_constraintEnd_toEndOf="@+id/carpeta"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="@+id/carpeta"
-        app:layout_constraintTop_toTopOf="@+id/carpeta"
-        app:srcCompat="@drawable/hoja" />
 
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/special_elite"
-        android:text="Central Intelligence Agency"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/hoja"
-        app:layout_constraintEnd_toEndOf="@+id/hoja"
-        app:layout_constraintHorizontal_bias="0.628"
-        app:layout_constraintStart_toStartOf="@+id/hoja"
-        app:layout_constraintTop_toTopOf="@+id/hoja"
-        app:layout_constraintVertical_bias="0.058" />
 
-    <TextView
-        android:id="@+id/t2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/special_elite"
-        android:text="United States of America"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/hoja"
-        app:layout_constraintEnd_toEndOf="@+id/hoja"
-        app:layout_constraintHorizontal_bias="0.287"
-        app:layout_constraintStart_toStartOf="@+id/hoja"
-        app:layout_constraintTop_toTopOf="@+id/hoja"
-        app:layout_constraintVertical_bias="0.156" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hoja3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="-317dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <ImageView
-        android:id="@+id/sello"
-        android:layout_width="52dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="@+id/hoja"
-        app:layout_constraintEnd_toEndOf="@+id/hoja"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="@+id/hoja"
-        app:layout_constraintTop_toTopOf="@+id/hoja"
-        app:layout_constraintVertical_bias="0.971"
-        app:srcCompat="@drawable/sello_cia" />
 
-    <ImageView
-        android:id="@+id/fondoFoto"
-        android:layout_width="102dp"
-        android:layout_height="107dp"
-        app:layout_constraintBottom_toBottomOf="@+id/hoja"
-        app:layout_constraintEnd_toEndOf="@+id/hoja"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="@+id/hoja"
-        app:layout_constraintTop_toTopOf="@+id/hoja"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fondofoto" />
+            <ImageView
+                android:id="@+id/fondoHoja"
+                android:layout_width="241dp"
+                android:layout_height="293dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hoja" />
 
-    <ImageView
-        android:id="@+id/foto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/fondoFoto"
-        app:layout_constraintEnd_toEndOf="@+id/fondoFoto"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="@+id/fondoFoto"
-        app:layout_constraintTop_toTopOf="@+id/fondoFoto"
-        app:layout_constraintVertical_bias="0.372"
-        app:srcCompat="@drawable/cient1" />
+            <TextView
+            android:id="@+id/t1"
+            android:layout_width="163dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/special_elite"
+            android:text="Central Intelligence Agency"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="United States of America"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.156" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Von Braun, Wernher – Proyecto Paperclip"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.292" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Científico alemán reclutado por EE.UU."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.389" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="después de la Segunda Guerra Mundial."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.435" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fue clave en el desarrollo del programa"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="norteamericano."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.528" />
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="El primer lote fue identificado con"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.617" />
+
+        <TextView
+            android:id="@+id/t10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="@string/texto_sello"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.163"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.664" />
+
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fecha: 1945"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="0.246" />
+
+        <ImageView
+            android:id="@+id/sello"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/sello_cia" />
+
+        <ImageView
+            android:id="@+id/fondoFoto"
+            android:layout_width="102dp"
+            android:layout_height="107dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fondofoto" />
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoFoto"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFoto"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/fondoFoto"
+            app:layout_constraintTop_toTopOf="@+id/fondoFoto"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/cient1" />
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hoja4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
 
-        <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:id="@+id/main"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
+        <ImageView
+            android:id="@+id/fondoHoja2"
+            android:layout_width="241dp"
+            android:layout_height="293dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hoja" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t10"-->
-<!--        android:layout_width="176dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t9"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="0dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Presenta altos niveles de inteligencia, gran conocimiento de farmacología experimental."-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t1_2"
+            android:layout_width="163dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/special_elite"
+            android:text="Central Intelligence Agency"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.054" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t9"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t8"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="3dp"-->
-<!--        android:layout_marginEnd="92dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Observaciones: "-->
-<!--        android:textSize="10sp" />-->
+        <TextView
+            android:id="@+id/t2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="United States of America"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.156"
+            android:textColor='#000000' />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t8"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t7"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="-2dp"-->
-<!--        android:layout_marginEnd="10dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Estado actual: Desaparecido desde 1972"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Sidney Gottlieb – MK-Ultra"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.292"
+            android:textColor='#000000' />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t7"-->
-<!--        android:layout_width="159dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t6"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="-1dp"-->
-<!--        android:layout_marginEnd="13dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Clasificación de seguridad: Nivel 6"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Químico jefe de la CIA y director del pro-"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.389"
+            android:textColor='#000000' />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t6"-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t5"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="-2dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Nacionalidad: Estadounidense"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text=" yecto MK-Ultra. Supervisó experimentos"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.435"
+            android:textColor='#000000' />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t5"-->
-<!--        android:layout_width="72dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t4"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="-1dp"-->
-<!--        android:layout_marginEnd="100dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Edad: 47 años"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="con LSD y técnicas de control mental."
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.482"
+            android:textColor='#000000' />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t4"-->
-<!--        android:layout_width="160dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t3"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="11dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="35dp"-->
-<!--        android:layout_marginEnd="14dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Nombre completo: Dr. Alan Wexler"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t10_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="@string/letraE"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.617" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/t3"-->
-<!--        android:layout_width="126dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t2"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="101dp"-->
-<!--        android:layout_marginLeft="410dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginEnd="-42dp"-->
-<!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Expediente N°: MK-31482-F"-->
-<!--        android:textSize="8sp" />-->
+        <TextView
+            android:id="@+id/t11_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="registrar los efectos del LSD."
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.664"
+            android:textColor='#000000'/>
+
+        <TextView
+            android:id="@+id/t5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fecha: 1953"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="0.246"
+            android:textColor='#000000' />
+
+        <ImageView
+            android:id="@+id/sello_2"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/sello_cia" />
+
+        <ImageView
+            android:id="@+id/fondoFoto_2"
+            android:layout_width="102dp"
+            android:layout_height="107dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja2"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja2"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fondofoto" />
+
+        <ImageView
+            android:id="@+id/foto_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoFoto_2"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFoto_2"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/fondoFoto_2"
+            app:layout_constraintTop_toTopOf="@+id/fondoFoto_2"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/cient1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hoja2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/fondoHoja3"
+            android:layout_width="241dp"
+            android:layout_height="293dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hoja" />
+
+        <TextView
+            android:id="@+id/t1_3"
+            android:layout_width="163dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/special_elite"
+            android:text="Central Intelligence Agency"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <TextView
+            android:id="@+id/t2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="United States of America"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.156"
+            android:textColor='#000000' />
+
+        <TextView
+            android:id="@+id/t3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Richard Bissell – Crisis de los Misiles"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.292" />
+
+        <TextView
+            android:id="@+id/t12_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="en cuba."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.339" />
+
+
+        <TextView
+            android:id="@+id/t6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Alto funcionario de la CIA, involucrado"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.435" />
+
+        <TextView
+            android:id="@+id/t7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="en operaciones durante la Guerra Fría,"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <TextView
+            android:id="@+id/t13_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="incluida la supervisión de vuelos U-2"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.528" />
+
+        <TextView
+            android:id="@+id/t14_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="que descubrieron los misiles en Cuba."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <TextView
+            android:id="@+id/t15_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="El satélite espía identificó la base "
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.326"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <TextView
+            android:id="@+id/t10_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="@string/letraA"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.71" />
+
+        <TextView
+            android:id="@+id/t5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fecha: 1962"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="0.246"
+            android:textColor='#000000' />
+
+        <ImageView
+            android:id="@+id/sello_3"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/sello_cia" />
+
+        <ImageView
+            android:id="@+id/fondoFoto_3"
+            android:layout_width="102dp"
+            android:layout_height="107dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja3"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja3"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fondofoto" />
+
+        <ImageView
+            android:id="@+id/foto_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoFoto_3"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFoto_3"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/fondoFoto_3"
+            app:layout_constraintTop_toTopOf="@+id/fondoFoto_3"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/cient1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hoja5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/fondoHoja_4"
+            android:layout_width="241dp"
+            android:layout_height="293dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hoja" />
+
+        <TextView
+            android:id="@+id/t1_4"
+            android:layout_width="163dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/special_elite"
+            android:text="Central Intelligence Agency"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <TextView
+            android:id="@+id/t2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="United States of America"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.156"
+            android:textColor='#000000' />
+
+        <TextView
+            android:id="@+id/t3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Ames, Aldrich – Agente doble"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.292" />
+
+        <TextView
+            android:id="@+id/t6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Oficial de la CIA que espió para la URSS"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.378" />
+
+        <TextView
+            android:id="@+id/t7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="durante más de 9 años. Fue arrestado en"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.425" />
+
+        <TextView
+            android:id="@+id/t13_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="1994 por traición."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.471" />
+
+        <TextView
+            android:id="@+id/t10_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="@string/letraL"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.617" />
+
+        <TextView
+            android:id="@+id/t16_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="evidencia principal."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <TextView
+            android:id="@+id/t5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fecha: 1994"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="0.246"
+            android:textColor='#000000' />
+
+        <ImageView
+            android:id="@+id/sello_4"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/sello_cia" />
+
+        <ImageView
+            android:id="@+id/fondoFoto_4"
+            android:layout_width="102dp"
+            android:layout_height="107dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja_4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fondofoto" />
+
+        <ImageView
+            android:id="@+id/foto_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoFoto_4"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFoto_4"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/fondoFoto_4"
+            app:layout_constraintTop_toTopOf="@+id/fondoFoto_4"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/cient1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hoja1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/fondoHoja5"
+            android:layout_width="241dp"
+            android:layout_height="293dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hoja" />
+
+        <TextView
+            android:id="@+id/t1_5"
+            android:layout_width="163dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/special_elite"
+            android:text="Central Intelligence Agency"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <TextView
+            android:id="@+id/t2_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="United States of America"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.156" />
+
+        <TextView
+            android:id="@+id/t3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Gul Rahman – Salt Pit"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.292" />
+
+        <TextView
+            android:id="@+id/t6_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Preso afgano que murió bajo custodia en"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.378" />
+
+        <TextView
+            android:id="@+id/t7_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="la prisión secreta “Salt Pit”. Su caso"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.425" />
+
+        <TextView
+            android:id="@+id/t13_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="evidenció abusos en centros de deten-"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.471" />
+
+        <TextView
+            android:id="@+id/t17_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="ción clandestinos."
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <TextView
+            android:id="@+id/t10_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="@string/letraS"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <TextView
+            android:id="@+id/t16_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Salt Pit fue clasificado como Instala-"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.617" />
+
+        <TextView
+            android:id="@+id/t5_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special_elite"
+            android:text="Fecha: 2002"
+            android:textColor='#000000'
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="0.246" />
+
+        <ImageView
+            android:id="@+id/sello_5"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/sello_cia" />
+
+        <ImageView
+            android:id="@+id/fondoFoto_5"
+            android:layout_width="102dp"
+            android:layout_height="107dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoHoja5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fondoHoja5"
+            app:layout_constraintTop_toTopOf="@+id/fondoHoja5"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fondofoto" />
+
+        <ImageView
+            android:id="@+id/foto_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoFoto_5"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFoto_5"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/fondoFoto_5"
+            app:layout_constraintTop_toTopOf="@+id/fondoFoto_5"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/cient1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/flecha_der" />
+
+    <ImageButton
+        android:id="@+id/botonAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/flecha_izq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <!--  <ImageView  -->
+<!--        android:id="@+id/hoja"-->
+<!--        android:layout_width="241dp"-->
+<!--        android:layout_height="293dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/carpeta"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/carpeta"-->
+<!--        app:layout_constraintHorizontal_bias="0.762"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/carpeta"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/carpeta"-->
+<!--        app:srcCompat="@drawable/hoja" />-->
+
 
 <!--    <TextView-->
 <!--        android:id="@+id/t1"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignTop="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="82dp"-->
-<!--        android:layout_marginLeft="400dp"-->
-<!--        android:layout_marginTop="44dp"-->
-<!--        android:layout_marginEnd="-41dp"-->
 <!--        android:fontFamily="@font/special_elite"-->
 <!--        android:text="Central Intelligence Agency"-->
-<!--        android:textSize="10sp" />-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/hoja"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/hoja"-->
+<!--        app:layout_constraintHorizontal_bias="0.628"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/hoja"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/hoja"-->
+<!--        app:layout_constraintVertical_bias="0.058" />-->
 
 <!--    <TextView-->
-<!--        android:id="@+id/t12"-->
-<!--        android:layout_width="176dp"-->
+<!--        android:id="@+id/t2"-->
+<!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/t10"-->
-<!--        android:layout_alignStart="@+id/hojaBase"-->
-<!--        android:layout_alignEnd="@+id/hojaBase"-->
-<!--        android:layout_marginStart="11dp"-->
-<!--        android:layout_marginLeft="370dp"-->
-<!--        android:layout_marginTop="3dp"-->
-<!--        android:layout_marginEnd="-2dp"-->
 <!--        android:fontFamily="@font/special_elite"-->
-<!--        android:text="Podría tener información sobre los subproyectos BLUE-GLASS y ACOUSTIC-PULSE."-->
-<!--        android:textSize="8sp" />-->
+<!--        android:text="United States of America"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/hoja"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/hoja"-->
+<!--        app:layout_constraintHorizontal_bias="0.287"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/hoja"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/hoja"-->
+<!--        app:layout_constraintVertical_bias="0.156" />-->
 
+<!--    <ImageView-->
+<!--        android:id="@+id/sello"-->
+<!--        android:layout_width="52dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/hoja"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/hoja"-->
+<!--        app:layout_constraintHorizontal_bias="0.888"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/hoja"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/hoja"-->
+<!--        app:layout_constraintVertical_bias="0.971"-->
+<!--        app:srcCompat="@drawable/sello_cia" />-->
 
-<!--</RelativeLayout>-->
+<!--    <ImageView-->
+<!--        android:id="@+id/fondoFoto"-->
+<!--        android:layout_width="102dp"-->
+<!--        android:layout_height="107dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/hoja"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/hoja"-->
+<!--        app:layout_constraintHorizontal_bias="0.96"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/hoja"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/hoja"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/fondofoto" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/foto"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/fondoFoto"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/fondoFoto"-->
+<!--        app:layout_constraintHorizontal_bias="0.526"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/fondoFoto"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/fondoFoto"-->
+<!--        app:layout_constraintVertical_bias="0.372"-->
+<!--        app:srcCompat="@drawable/cient1" />-->
