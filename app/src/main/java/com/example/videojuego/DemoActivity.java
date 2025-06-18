@@ -1,6 +1,8 @@
 package com.example.videojuego;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +39,16 @@ public class DemoActivity extends AppCompatActivity {
 
         btnAnterior.setOnClickListener(v -> cambiarHoja(hojaActual - 1));
         btnSiguiente.setOnClickListener(v -> cambiarHoja(hojaActual + 1));
+
+        ImageButton botonIrAContrasena = findViewById(R.id.imageButton);
+        botonIrAContrasena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DemoActivity.this, ContrasenaActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void cambiarHoja(int nuevaHoja) {

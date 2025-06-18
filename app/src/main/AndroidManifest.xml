@@ -28,6 +28,13 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".DemoActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".SiguienteActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ContrasenaActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Identificacion2Activity"
+            android:screenOrientation="landscape"/>
+
 
     </application>
 

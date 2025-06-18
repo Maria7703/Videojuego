@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/compu_contrasenaa" />
+
+    <TextView
+        android:id="@+id/contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="-70dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Ingrea la contraseña:"
+        android:textColor="#00FFAA"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/usuarioInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="-25dp"
+        android:background="@android:color/transparent"
+        android:textColor="#00FFAA"
+        android:hint="Nombre de usuario"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+       />
+
+    <ImageButton
+        android:id="@+id/botonEnter"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:contentDescription="Botón con imagen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/enter" />
+</FrameLayout>

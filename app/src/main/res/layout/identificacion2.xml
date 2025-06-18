@@ -1,0 +1,194 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/foto">
+
+    <ImageView
+        android:id="@+id/tarjeta"
+        android:layout_width="718dp"
+        android:layout_height="367dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        app:srcCompat="@drawable/tarjeta" />
+
+    <TextView
+        android:id="@+id/cia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="406dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="CIA"
+        android:textColor="#192B85"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.066" />
+
+
+    <ImageView
+        android:id="@+id/peronaje"
+        android:layout_width="181dp"
+        android:layout_height="170dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.852"
+        app:srcCompat="@drawable/personaje" />
+
+    <ImageView
+        android:id="@+id/sello"
+        android:layout_width="162dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/sello_cia_color" />
+
+    <ImageView
+        android:id="@+id/codigo"
+        android:layout_width="131dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.122"
+        app:srcCompat="@drawable/codigo" />
+
+    <TextView
+        android:id="@+id/nombreTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nombre:"
+        android:textColor="#192B85"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/designacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Designacion:"
+        android:textColor="#192B85"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="División:"
+        android:textColor="#192B85"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/nivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nivel:"
+        android:textColor="#192B85"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <TextView
+        android:id="@+id/nombreEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="408dp"
+        android:layout_marginTop="172dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:textColor="#0D0D0D"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta" />
+
+    <TextView
+        android:id="@+id/designacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Administrativo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <TextView
+        android:id="@+id/division2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Control de Anomalías"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/nivel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tarjeta"
+        app:layout_constraintEnd_toEndOf="@+id/tarjeta"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/tarjeta"
+        app:layout_constraintTop_toTopOf="@+id/tarjeta"
+        app:layout_constraintVertical_bias="0.94" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
