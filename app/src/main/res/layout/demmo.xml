@@ -38,7 +38,7 @@
         android:id="@+id/hoja3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         tools:layout_editor_absoluteX="-317dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -853,7 +853,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="16dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/fondoHoja5"
@@ -1098,16 +1098,22 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="127dp"
         android:ems="10"
-        android:inputType="text"
+        android:gravity="top|start"
+        android:hint="Escribe aquí..."
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.382" />
 
     <ImageButton
         android:id="@+id/imageButton"
