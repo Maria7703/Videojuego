@@ -5,4 +5,9 @@
     <string name="letraA"><font color='#FF0000'>A</font>-62 como amenaza.</string>
     <string name="letraL">La sección <font color='#FF0000'>L</font> del archivo contenía la</string>
     <string name="letraS">ción <font color='#FF0000'>S</font> -02 por Langley.</string>
+    <string name="fecha1945">Fecha:  <font color='#FF0000'>1945</font></string>
+    <string name="fecha1953">Fecha:  <font color='#FF0000'>1953</font></string>
+    <string name="fecha1962">Fecha:  <font color='#FF0000'>1962</font></string>
+    <string name="fecha1994">Fecha:  <font color='#FF0000'>1994</font></string>
+    <string name="fecha2002">Fecha:  <font color='#FF0000'>2002</font></string>
 </resources>

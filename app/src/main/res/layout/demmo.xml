@@ -38,7 +38,7 @@
         android:id="@+id/hoja3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         tools:layout_editor_absoluteX="-317dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -193,7 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/special_elite"
-            android:text="Fecha: 1945"
+            android:text="@string/fecha1945"
             android:textColor='#000000'
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/fondoHoja"
@@ -387,7 +387,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/special_elite"
-            android:text="Fecha: 1953"
+            android:text="@string/fecha1953"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/fondoHoja2"
             app:layout_constraintEnd_toEndOf="@+id/fondoHoja2"
@@ -608,7 +608,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/special_elite"
-            android:text="Fecha: 1962"
+            android:text="@string/fecha1962"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/fondoHoja3"
             app:layout_constraintEnd_toEndOf="@+id/fondoHoja3"
@@ -798,7 +798,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/special_elite"
-            android:text="Fecha: 1994"
+            android:text="@string/fecha1994"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/fondoHoja_4"
             app:layout_constraintEnd_toEndOf="@+id/fondoHoja_4"
@@ -853,7 +853,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="16dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/fondoHoja5"
@@ -1005,7 +1005,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/special_elite"
-            android:text="Fecha: 2002"
+            android:text="@string/fecha2002"
             android:textColor='#000000'
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/fondoHoja5"
