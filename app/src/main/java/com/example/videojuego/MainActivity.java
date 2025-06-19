@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // Enlazar con los IDs del XML (asegúrate de que coincidan)
         btnNueva = findViewById(R.id.btnnueva); // <-- Este ID debe existir en activity_main.xml
         btnContinuar = findViewById(R.id.btncontinuar);
-        btnCapitulos = findViewById(R.id.btncapitulos);
+//        btnCapitulos = findViewById(R.id.btncapitulos);
         btnAjustes = findViewById(R.id.bntajustes);
         btnSalir = findViewById(R.id.btnsalir);
         btnTienda = findViewById(R.id.tienda);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnContinuar.setOnClickListener(v -> Toast.makeText(this, "Continuar Partida", Toast.LENGTH_SHORT).show());
-        btnCapitulos.setOnClickListener(v -> Toast.makeText(this, "Ver Capítulos", Toast.LENGTH_SHORT).show());
+//        btnCapitulos.setOnClickListener(v -> Toast.makeText(this, "Ver Capítulos", Toast.LENGTH_SHORT).show());
         btnAjustes.setOnClickListener(v -> Toast.makeText(this, "Abrir Ajustes", Toast.LENGTH_SHORT).show());
         btnSalir.setOnClickListener(v -> {
             Toast.makeText(this, "Saliendo del juego...", Toast.LENGTH_SHORT).show();
