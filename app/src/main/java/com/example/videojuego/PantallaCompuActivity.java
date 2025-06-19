@@ -30,11 +30,16 @@ public class PantallaCompuActivity extends AppCompatActivity {
             if (!nombre.isEmpty()) {
                 guardarNombre(nombre);
 
-                // Ir a la pantalla de identificación
                 Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
                 intent.putExtra("nombreJugador", nombre);
+
+                // 👇 Reenviar el valor de nuevaPartida (esto es lo que faltaba)
+                boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
+                intent.putExtra("nuevaPartida", nuevaPartida);
+
                 startActivity(intent);
                 finish();
+
             } else {
                 Toast.makeText(this, "Por favor ingresa un nombre", Toast.LENGTH_SHORT).show();
             }
@@ -52,7 +57,7 @@ public class PantallaCompuActivity extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
             Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
-            startActivity(intent);
+            startActivity(intent); // ❌ Aquí no se reenvía el nombre ni nuevaPartida
             return true;
         }
         return super.onKeyDown(keyCode, event);

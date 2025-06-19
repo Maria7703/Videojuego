@@ -47,6 +47,15 @@ public class IdentificacionActivity extends AppCompatActivity {
             }
         }, 3000); // 3000 ms = 3 segundos
 
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(IdentificacionActivity.this, DemoActivity.class);
+            boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
+            intent.putExtra("nuevaPartida", nuevaPartida);
+            startActivity(intent);
+            finish();
+        }, 3000); // o los segundos que uses
+
+
     }
 
 }

@@ -1,6 +1,7 @@
 package com.example.videojuego;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -39,5 +40,24 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
         btnTienda.setOnClickListener(v -> Toast.makeText(this, "Abrir Tienda", Toast.LENGTH_SHORT).show());
+
+        ImageButton botonContinuar = findViewById(R.id.btncontinuar); // o como lo tengas
+        botonContinuar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DemoActivity.class); // o el nombre que uses
+            startActivity(intent);
+        });
+
+        btnNueva.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PantallaCompuActivity.class);
+            intent.putExtra("nuevaPartida", true); // <- importante
+            startActivity(intent);
+        });
+
+        btnContinuar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DemoActivity.class);
+            intent.putExtra("nuevaPartida", false); // <- no borrar
+            startActivity(intent);
+        });
+
     }
 }
