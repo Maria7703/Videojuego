@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -45,4 +46,36 @@
         android:contentDescription="Botón con imagen"
         android:scaleType="centerCrop"
         android:src="@drawable/enter" />
+
+    <ImageButton
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/flecha2"
+        android:layout_marginTop="330dp"/>
+
+    <ImageButton
+        android:id="@+id/botonPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:srcCompat="@drawable/botonpausa" />
+
+    <ImageButton
+        android:id="@+id/botonAyda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:srcCompat="@drawable/botonayuda"
+        android:layout_marginLeft="70dp" />
+
+
 </FrameLayout>

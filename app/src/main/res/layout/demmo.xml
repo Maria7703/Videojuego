@@ -237,7 +237,7 @@
             app:layout_constraintStart_toStartOf="@+id/fondoFoto"
             app:layout_constraintTop_toTopOf="@+id/fondoFoto"
             app:layout_constraintVertical_bias="0.372"
-            app:srcCompat="@drawable/cient1" />
+            app:srcCompat="@drawable/cient3" />
 
 
 
@@ -853,7 +853,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="16dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/fondoHoja5"
@@ -1129,6 +1129,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/flecha2" />
+
+    <ImageButton
+        android:id="@+id/botonPausa"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botonpausa" />
+
+    <ImageButton
+        android:id="@+id/botonAyuda"
+        android:layout_width="63dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Siguiente"
+        android:padding="0dp"
+        app:layout_constraintStart_toEndOf="@+id/botonPausa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botonayuda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
