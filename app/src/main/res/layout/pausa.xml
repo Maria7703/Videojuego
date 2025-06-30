@@ -7,40 +7,40 @@
     android:background="@color/black">
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnReiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu"
         app:srcCompat="@drawable/botonreiniciar" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btnMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/btnAjustes"
         app:srcCompat="@drawable/botonmenu" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnAjustes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/btnReanudar"
         app:srcCompat="@drawable/botonajustes" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnReanudar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/botonreaunudar" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/btnTienda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"

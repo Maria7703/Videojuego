@@ -34,6 +34,22 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".Identificacion2Activity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".PausaActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto1Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto2Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto3Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto4Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto5Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Foto6Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".IntroduccionActivity"
+            android:screenOrientation="landscape"/>
 
 
     </application>

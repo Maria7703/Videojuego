@@ -80,6 +80,17 @@ public class ContrasenaActivity extends AppCompatActivity {
                 }
             }
         });
+        ImageButton botonPausa = findViewById(R.id.botonPausa);
+        botonPausa.setOnClickListener(v -> {
+            Intent intent = new Intent(ContrasenaActivity.this, PausaActivity.class);
+            startActivity(intent);
+        });
+
+        ImageButton botonRegresar = findViewById(R.id.botonRegresar);
+        botonRegresar.setOnClickListener(v -> {
+            Intent intent = new Intent(ContrasenaActivity.this, DemoActivity.class);
+            startActivity(intent);
+        });
     }
 
     private String obtenerNombreJugadorDesdeBD() {

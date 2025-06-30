@@ -72,6 +72,12 @@ public class DemoActivity extends AppCompatActivity {
         findViewById(R.id.imageButton).setOnClickListener(v ->
                 startActivity(new Intent(this, ContrasenaActivity.class))
         );
+
+        ImageButton botonPausa = findViewById(R.id.botonPausa);
+        botonPausa.setOnClickListener(v -> {
+            Intent intent = new Intent(DemoActivity.this, PausaActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void cambiarHoja(int nuevaHoja) {

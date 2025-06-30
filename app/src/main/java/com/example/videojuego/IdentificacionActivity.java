@@ -42,7 +42,7 @@ public class IdentificacionActivity extends AppCompatActivity {
 
         // Esperar 3 segundos y pasar a la pantalla del juego
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(IdentificacionActivity.this, DemoActivity.class);
+            Intent intent = new Intent(IdentificacionActivity.this, IntroduccionActivity.class);
             intent.putExtra("nombreJugador", nombre); // Si quieres usarlo en la siguiente también
             startActivity(intent);
             finish();
@@ -51,14 +51,14 @@ public class IdentificacionActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(IdentificacionActivity.this, DemoActivity.class);
+                Intent intent = new Intent(IdentificacionActivity.this, IntroduccionActivity.class);
                 startActivity(intent);
                 finish(); // Para cerrar esta pantalla
             }
         }, 3000); // 3000 ms = 3 segundos
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(IdentificacionActivity.this, DemoActivity.class);
+            Intent intent = new Intent(IdentificacionActivity.this, IntroduccionActivity.class);
             boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
             intent.putExtra("nuevaPartida", nuevaPartida);
             startActivity(intent);
