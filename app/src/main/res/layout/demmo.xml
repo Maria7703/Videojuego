@@ -31,7 +31,30 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/carpeta" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="172dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202">
 
+        <TextView
+            android:id="@+id/textoNombre"
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Agente: "
+            android:fontFamily="@font/special_elite"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -431,7 +454,7 @@
             app:layout_constraintStart_toStartOf="@+id/fondoFoto_2"
             app:layout_constraintTop_toTopOf="@+id/fondoFoto_2"
             app:layout_constraintVertical_bias="0.372"
-            app:srcCompat="@drawable/cient1" />
+            app:srcCompat="@drawable/cient6" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1049,32 +1072,8 @@
             app:layout_constraintStart_toStartOf="@+id/fondoFoto_5"
             app:layout_constraintTop_toTopOf="@+id/fondoFoto_5"
             app:layout_constraintVertical_bias="0.372"
-            app:srcCompat="@drawable/cient1" />
+            app:srcCompat="@drawable/cient7" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="172dp"
-            android:layout_height="135dp"
-            android:layout_marginEnd="432dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.202">
-
-            <TextView
-                android:id="@+id/textoNombre"
-                android:layout_width="137dp"
-                android:layout_height="93dp"
-                android:layout_gravity="center_horizontal"
-                android:text="Agente: "
-                android:fontFamily="@font/special_elite"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
