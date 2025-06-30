@@ -853,7 +853,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="16dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/fondoHoja5"
