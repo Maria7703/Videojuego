@@ -2,6 +2,7 @@ package com.example.videojuego;
 
 import android.content.Intent;
 import android.content.ContentValues;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -39,17 +40,18 @@ public class PantallaCompuActivity extends AppCompatActivity {
         botonEnter.setOnClickListener(v -> {
             String nombre = usuarioInput.getText().toString().trim();
             if (!nombre.isEmpty()) {
-                guardarNombre(nombre);
+                // ‑‑‑ Guarda el nombre para toda la app
+                SharedPreferences prefs = getSharedPreferences("MiVideojuegoPrefs", MODE_PRIVATE);
+                prefs.edit().putString("nombreJugador", nombre).apply();
 
-                Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
+                Intent intent = new Intent(this, IdentificacionActivity.class);
                 intent.putExtra("nombreJugador", nombre);
-
-                // 👇 Reenviar el valor de nuevaPartida (esto es lo que faltaba)
-                boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
-                intent.putExtra("nuevaPartida", nuevaPartida);
-
+                intent.putExtra("nuevaPartida",
+                        getIntent().getBooleanExtra("nuevaPartida", false)); // re‑envía la bandera
                 startActivity(intent);
                 finish();
+
+
 
             } else {
                 Toast.makeText(this, "Por favor ingresa un nombre", Toast.LENGTH_SHORT).show();

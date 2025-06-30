@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DemoActivity extends AppCompatActivity {
+
     private View[] hojas;
     private int hojaActual = 0;
+
     private EditText notaEditText;
     private static final String PREFS_NAME = "MiVideojuegoPrefs";
     private static final String CLAVE_NOTA = "nota_guardada";
@@ -19,10 +22,10 @@ public class DemoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demmo);  // ✅ Siempre va primero
+        setContentView(R.layout.demmo);         // 1) layout primero
 
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
+        // ——— Pantalla completa inmersiva ———
+        getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
@@ -31,24 +34,27 @@ public class DemoActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
         );
 
-        // Obtener si es nueva partida
-        boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
-        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        // ——— SharedPreferences (solo una instancia) ———
+        SharedPreferences prefs  = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
 
-        // Referencia al campo de nota
+        // ——— Mostrar nombre del jugador ———
+        String nombreJugador = prefs.getString("nombreJugador", "Jugador");
+        TextView textoNombre = findViewById(R.id.textoNombre);
+        textoNombre.setText("Agente: " + nombreJugador);
+
+        // ——— Nota (nueva partida vs continuar) ———
+        boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
         notaEditText = findViewById(R.id.editTextText);
 
         if (nuevaPartida) {
-            editor.remove(CLAVE_NOTA);
-            editor.apply();
+            editor.remove(CLAVE_NOTA).apply();      // limpia nota
             notaEditText.setText("");
         } else {
-            String notaGuardada = prefs.getString(CLAVE_NOTA, "");
-            notaEditText.setText(notaGuardada);
+            notaEditText.setText(prefs.getString(CLAVE_NOTA, ""));
         }
 
-        // Inicializar las hojas
+        // ——— Inicializar las “hojas” ———
         hojas = new View[]{
                 findViewById(R.id.hoja1),
                 findViewById(R.id.hoja2),
@@ -57,17 +63,15 @@ public class DemoActivity extends AppCompatActivity {
                 findViewById(R.id.hoja5)
         };
 
-        ImageButton btnAnterior = findViewById(R.id.botonAnterior);
-        ImageButton btnSiguiente = findViewById(R.id.botonSiguiente);
-
+        ImageButton btnAnterior   = findViewById(R.id.botonAnterior);
+        ImageButton btnSiguiente  = findViewById(R.id.botonSiguiente);
         btnAnterior.setOnClickListener(v -> cambiarHoja(hojaActual - 1));
         btnSiguiente.setOnClickListener(v -> cambiarHoja(hojaActual + 1));
 
-        ImageButton botonIrAContrasena = findViewById(R.id.imageButton);
-        botonIrAContrasena.setOnClickListener(v -> {
-            Intent intent = new Intent(DemoActivity.this, ContrasenaActivity.class);
-            startActivity(intent);
-        });
+        // ——— Botón para ir a la pantalla de contraseña ———
+        findViewById(R.id.imageButton).setOnClickListener(v ->
+                startActivity(new Intent(this, ContrasenaActivity.class))
+        );
     }
 
     private void cambiarHoja(int nuevaHoja) {
@@ -82,13 +86,10 @@ public class DemoActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
+        // Guarda la nota y limpia la bandera nuevaPartida
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(CLAVE_NOTA, notaEditText.getText().toString());
-        editor.apply();
-        boolean nuevaPartida = prefs.getBoolean("nuevaPartida", false);
-
-        // limpiar la bandera después de usarla
         editor.putBoolean("nuevaPartida", false);
         editor.apply();
     }
