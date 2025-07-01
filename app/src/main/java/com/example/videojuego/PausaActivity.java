@@ -6,10 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.IOException;
+import java.io.InputStream;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PausaActivity extends AppCompatActivity{
+
+    private static final String PREFS_NAME = "MiVideojuegoPrefs";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +45,38 @@ public class PausaActivity extends AppCompatActivity{
             Intent intent = new Intent(PausaActivity.this, MainActivity.class);
             startActivity(intent);
         });
+
+
+        ImageButton btnReiniciar = findViewById(R.id.btnReiniciar);
+        btnReiniciar.setOnClickListener(v -> {
+            try (InputStream is = getAssets().open("estado_default.json")) {
+                byte[] buffer = new byte[is.available()];
+                is.read(buffer);
+                JSONObject obj = new JSONObject(new String(buffer, "UTF-8"));
+
+                SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+                prefs.edit()
+                        .putString("nota_guardada", obj.getString("nota_guardada"))
+                        .putInt("intentos_guardados", obj.getInt("intentos_guardados"))
+                        .apply();
+
+                Toast.makeText(this, "Progreso restaurado", Toast.LENGTH_SHORT).show();
+
+                // Redirige a DemoActivity como si fuera nueva partida
+                Intent intent = new Intent(PausaActivity.this, DemoActivity.class);
+                intent.putExtra("nuevaPartida", true);
+                startActivity(intent);
+                finish();
+
+            } catch (IOException | JSONException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "Error al restaurar datos", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public void limpiarNotaEnPantalla() {
+        EditText nota = findViewById(R.id.editTextText);
+        if (nota != null) nota.setText("");
     }
 }
