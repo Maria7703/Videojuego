@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnNueva, btnContinuar, btnAjustes, btnSalir, btnTienda;
+    ImageButton btnNueva, btnContinuar, btnCreditos, btnSalir, btnTienda;
 
     private static final String PREFS_NAME = "MiVideojuegoPrefs";
 
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // enlazar botones
         btnNueva       = findViewById(R.id.btnnueva);
         btnContinuar   = findViewById(R.id.btncontinuar);
-        btnAjustes     = findViewById(R.id.bntajustes);
+        btnCreditos     = findViewById(R.id.btnCreditos);
         btnSalir       = findViewById(R.id.btnsalir);
         btnTienda      = findViewById(R.id.tienda);
 
@@ -59,8 +59,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /* ------------------- OTROS BOTONES ------------------- */
-        btnAjustes.setOnClickListener(v ->
-                Toast.makeText(this, "Abrir Ajustes", Toast.LENGTH_SHORT).show());
+        btnCreditos.setOnClickListener(v ->{
+            Intent creditos = new Intent(MainActivity.this, CreditosActivity.class);
+            creditos.putExtra("desdePausa", false);  // importante
+            startActivity(creditos);
+        });
 
         btnTienda.setOnClickListener(v ->
                 Toast.makeText(this, "Abrir Tienda", Toast.LENGTH_SHORT).show());

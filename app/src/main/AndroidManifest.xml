@@ -50,6 +50,8 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".IntroduccionActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".CreditosActivity"
+            android:screenOrientation="landscape"/>
 
 
     </application>

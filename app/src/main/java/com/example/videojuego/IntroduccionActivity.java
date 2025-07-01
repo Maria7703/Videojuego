@@ -33,8 +33,5 @@ public class IntroduccionActivity extends AppCompatActivity{
             startActivity(intent);
         });
     }
-
-
-
 }
 

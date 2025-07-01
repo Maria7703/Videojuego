@@ -46,6 +46,13 @@ public class PausaActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
+        ImageButton btnCreditos = findViewById(R.id.btnCreditos);
+        btnCreditos.setOnClickListener(v -> {
+            Intent intent = new Intent(PausaActivity.this, CreditosActivity.class);
+            intent.putExtra("desdePausa", true);  // importante
+            startActivity(intent);
+        });
+
 
         ImageButton btnReiniciar = findViewById(R.id.btnReiniciar);
         btnReiniciar.setOnClickListener(v -> {
