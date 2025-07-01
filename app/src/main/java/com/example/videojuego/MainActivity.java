@@ -67,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnSalir.setOnClickListener(v -> {
             Toast.makeText(this, "Saliendo del juego...", Toast.LENGTH_SHORT).show();
-            finish();
+            finishAffinity(); // Cierra todas las Activities
+            System.exit(0);   // Finaliza el proceso de la app
         });
     }
 }
