@@ -12,7 +12,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.KeyEvent;
 
-
 public class PantallaCompuActivity extends AppCompatActivity {
 
     EditText usuarioInput;
@@ -39,20 +38,22 @@ public class PantallaCompuActivity extends AppCompatActivity {
 
         botonEnter.setOnClickListener(v -> {
             String nombre = usuarioInput.getText().toString().trim();
+
             if (!nombre.isEmpty()) {
-                // ‑‑‑ Guarda el nombre para toda la app
+                // ✅ Guarda en SharedPreferences
                 SharedPreferences prefs = getSharedPreferences("MiVideojuegoPrefs", MODE_PRIVATE);
                 prefs.edit().putString("nombreJugador", nombre).apply();
 
+                // ✅ Guarda en la base de datos
+                guardarNombre(nombre);
+
+                // ✅ Reenvía datos a IdentificacionActivity
                 Intent intent = new Intent(this, IdentificacionActivity.class);
                 intent.putExtra("nombreJugador", nombre);
                 intent.putExtra("nuevaPartida",
-                        getIntent().getBooleanExtra("nuevaPartida", false)); // re‑envía la bandera
+                        getIntent().getBooleanExtra("nuevaPartida", false));
                 startActivity(intent);
                 finish();
-
-
-
             } else {
                 Toast.makeText(this, "Por favor ingresa un nombre", Toast.LENGTH_SHORT).show();
             }
@@ -66,14 +67,28 @@ public class PantallaCompuActivity extends AppCompatActivity {
         db.insert(BaseDeDatosHelper.TABLA_USUARIO, null, valores);
         db.close();
     }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
-            Intent intent = new Intent(PantallaCompuActivity.this, IdentificacionActivity.class);
-            startActivity(intent); // ❌ Aquí no se reenvía el nombre ni nuevaPartida
-            return true;
+            String nombre = usuarioInput.getText().toString().trim();
+            if (!nombre.isEmpty()) {
+                SharedPreferences prefs = getSharedPreferences("MiVideojuegoPrefs", MODE_PRIVATE);
+                prefs.edit().putString("nombreJugador", nombre).apply();
+                guardarNombre(nombre);
+
+                Intent intent = new Intent(this, IdentificacionActivity.class);
+                intent.putExtra("nombreJugador", nombre);
+                intent.putExtra("nuevaPartida",
+                        getIntent().getBooleanExtra("nuevaPartida", false));
+                startActivity(intent);
+                finish();
+                return true;
+            } else {
+                Toast.makeText(this, "Por favor ingresa un nombre", Toast.LENGTH_SHORT).show();
+                return true;
+            }
         }
         return super.onKeyDown(keyCode, event);
     }
-
 }

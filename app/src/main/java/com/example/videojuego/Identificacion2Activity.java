@@ -1,6 +1,7 @@
 package com.example.videojuego;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -38,11 +39,16 @@ public class Identificacion2Activity extends AppCompatActivity {
         nombreEntry = findViewById(R.id.nombreEntry);
 
         String nombre = getIntent().getStringExtra("nombreJugador");
+        if (nombre == null || nombre.isEmpty()) {
+            SharedPreferences prefs = getSharedPreferences("MiVideojuegoPrefs", MODE_PRIVATE);
+            nombre = prefs.getString("nombreJugador", "");
+        }
 
-        if (nombre != null && !nombre.isEmpty()) {
-            nombreEntry.setText(nombre);
+        if (!nombre.isEmpty()) {
+            nombreEntry.setText("" + nombre);
         } else {
             nombreEntry.setText("Jugador desconocido");
         }
+
     }
 }

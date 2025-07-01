@@ -17,7 +17,6 @@ public class ContrasenaActivity extends AppCompatActivity {
     private EditText usuarioInput;
     private ImageButton botonEnter;
     private int intentos = 0;
-
     private static final String PREFS_NAME = "MiVideojuegoPrefs";
     private static final String CLAVE_INTENTOS = "intentos_guardados";
     private static final String CONTRASENA_CORRECTA = "REALS";
@@ -47,11 +46,9 @@ public class ContrasenaActivity extends AppCompatActivity {
         boolean nuevaPartida = getIntent().getBooleanExtra("nuevaPartida", false);
 
         if (nuevaPartida) {
-            // Reiniciar intentos si es nueva partida
             intentos = 0;
             prefs.edit().remove(CLAVE_INTENTOS).apply();
         } else {
-            // Recuperar intentos si es continuar
             intentos = prefs.getInt(CLAVE_INTENTOS, 0);
         }
 
@@ -59,7 +56,6 @@ public class ContrasenaActivity extends AppCompatActivity {
             String contrasenaIngresada = usuarioInput.getText().toString().trim();
 
             if (contrasenaIngresada.equals(CONTRASENA_CORRECTA)) {
-                // Reinicia los intentos si acertó
                 prefs.edit().remove(CLAVE_INTENTOS).apply();
                 startActivity(new Intent(this, SiguienteActivity.class));
                 finish();
@@ -70,26 +66,29 @@ public class ContrasenaActivity extends AppCompatActivity {
                 }
 
                 if (intentos >= 3) {
-                    String nombreJugador = obtenerNombreJugadorDesdeBD();
-                    Intent intent = new Intent(this, Identificacion2Activity.class);
-                    intent.putExtra("nombreJugador", nombreJugador);
-                    startActivity(intent);
+                    String nombreJugador = prefs.getString("nombreJugador", "");
+                    if (nombreJugador.isEmpty()) {
+                        nombreJugador = obtenerNombreJugadorDesdeBD();
+                    }
+
+                    Intent intentPerdiste = new Intent(this, Identificacion2Activity.class);
+                    intentPerdiste.putExtra("nombreJugador", nombreJugador);
+                    startActivity(intentPerdiste);
                     finish();
                 } else {
                     Toast.makeText(this, "Contraseña incorrecta. Intento " + intentos + " de 3", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        ImageButton botonPausa = findViewById(R.id.botonPausa);
-        botonPausa.setOnClickListener(v -> {
-            Intent intent = new Intent(ContrasenaActivity.this, PausaActivity.class);
-            startActivity(intent);
+
+        findViewById(R.id.botonPausa).setOnClickListener(v -> {
+            Intent pausaIntent = new Intent(ContrasenaActivity.this, PausaActivity.class);
+            startActivity(pausaIntent);
         });
 
-        ImageButton botonRegresar = findViewById(R.id.botonRegresar);
-        botonRegresar.setOnClickListener(v -> {
-            Intent intent = new Intent(ContrasenaActivity.this, DemoActivity.class);
-            startActivity(intent);
+        findViewById(R.id.botonRegresar).setOnClickListener(v -> {
+            Intent regresarIntent = new Intent(ContrasenaActivity.this, DemoActivity.class);
+            startActivity(regresarIntent);
         });
     }
 
