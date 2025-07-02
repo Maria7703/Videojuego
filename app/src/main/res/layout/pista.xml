@@ -15,7 +15,7 @@
         android:layout_width="564dp"
         android:layout_height="71dp"
         android:fontFamily="@font/special_elite"
-        android:text="Bienvenido Agente"
+        android:text="Pista"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="48sp"
@@ -27,62 +27,94 @@
         app:layout_constraintVertical_bias="0.043" />
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/pista1"
         android:layout_width="511dp"
         android:layout_height="62dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/special_elite"
-        android:text="Tu primera tarea es revisar los siguientes archivos desclasificados."
+        android:text="Puedes usar la nota para escribir tus observaciones."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="23sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <TextView
-        android:id="@+id/text3"
-        android:layout_width="515dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/pista2"
+        android:layout_width="511dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/special_elite"
-        android:text="Revisalos con cuidado y presta atención a los detalles."
+        android:text="Presta atención a las partes RESALTADAS en los archivos."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="23sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <TextView
-        android:id="@+id/text4"
-        android:layout_width="517dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/pista3"
+        android:layout_width="511dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/special_elite"
-        android:text="Según tu desempeño en esta prueba consideraremos tu pertenecia en la agencia."
+        android:text="Tal vez el orden sea importante."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="23sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <TextView
-        android:id="@+id/text5"
-        android:layout_width="517dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/pista4"
+        android:layout_width="511dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/special_elite"
-        android:text="Suerte"
+        android:text="Las fechas deben indicar un orden particular."
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="23sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4" />
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/pista5"
+        android:layout_width="511dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/special_elite"
+        android:text="La contraseña de la computadora debe ser algún tipo de clave oculta."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/pista6"
+        android:layout_width="511dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/special_elite"
+        android:text="Las mayusculas son importantes."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <TextView
         android:id="@+id/textCerrar"

@@ -16,7 +16,8 @@ public class ContrasenaActivity extends AppCompatActivity {
 
     private EditText usuarioInput;
     private ImageButton botonEnter;
-    private int intentos = 0;
+    private int intentos = 0, pistaActual = 0;
+    private final int TOTAL_PISTAS = 5;
     private static final String PREFS_NAME = "MiVideojuegoPrefs";
     private static final String CLAVE_INTENTOS = "intentos_guardados";
     private static final String CONTRASENA_CORRECTA = "REALS";
@@ -81,9 +82,23 @@ public class ContrasenaActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.botonPausa).setOnClickListener(v -> {
-            Intent pausaIntent = new Intent(ContrasenaActivity.this, PausaActivity.class);
-            startActivity(pausaIntent);
+
+        ImageButton botonPausa = findViewById(R.id.botonPausa);
+        botonPausa.setOnClickListener(v -> {
+            Intent intent = new Intent(ContrasenaActivity.this, PausaActivity.class);
+            intent.putExtra("origen", "ContrasenaActivity");
+            startActivity(intent);
+        });
+
+        ImageButton botonPista = findViewById(R.id.botonPista);
+        botonPista.setOnClickListener(v -> {
+            if (pistaActual < TOTAL_PISTAS) {
+                pistaActual++;  // incrementa
+                Intent intent = new Intent(ContrasenaActivity.this, PistaActivity.class);
+                intent.putExtra("pistaActual", pistaActual);
+                intent.putExtra("origen", "ContrasenaActivity");
+                startActivity(intent);
+            }
         });
 
         findViewById(R.id.botonRegresar).setOnClickListener(v -> {

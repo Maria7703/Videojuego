@@ -1168,7 +1168,7 @@
         app:srcCompat="@drawable/botonpausa" />
 
     <ImageButton
-        android:id="@+id/botonAyuda"
+        android:id="@+id/botonPista"
         android:layout_width="63dp"
         android:layout_height="41dp"
         android:layout_marginStart="12dp"

@@ -12,8 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DemoActivity extends AppCompatActivity {
 
-    private View[] hojas;
-    private int hojaActual = 0;
+    private View[] hojas, actual;
+    private int hojaActual = 0, pistaActual = 0;
+    private final int TOTAL_PISTAS = 5;
+
 
     private EditText notaEditText;
     private static final String PREFS_NAME = "MiVideojuegoPrefs";
@@ -76,8 +78,23 @@ public class DemoActivity extends AppCompatActivity {
         ImageButton botonPausa = findViewById(R.id.botonPausa);
         botonPausa.setOnClickListener(v -> {
             Intent intent = new Intent(DemoActivity.this, PausaActivity.class);
+            intent.putExtra("origen", "DemoActivity");
             startActivity(intent);
         });
+        pistaActual = getIntent().getIntExtra("pistaActual", 0);
+
+
+        ImageButton botonPista = findViewById(R.id.botonPista);
+        botonPista.setOnClickListener(v -> {
+            if (pistaActual < TOTAL_PISTAS) {
+                pistaActual++;  // incrementa
+                Intent intent = new Intent(DemoActivity.this, PistaActivity.class);
+                intent.putExtra("pistaActual", pistaActual);
+                intent.putExtra("origen", "DemoActivity");
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void cambiarHoja(int nuevaHoja) {
