@@ -34,10 +34,20 @@ public class PausaActivity extends AppCompatActivity{
                         | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
         );
 
+        String origen = getIntent().getStringExtra("origen");
+
+
         ImageButton btnReanudar = findViewById(R.id.btnReanudar);
         btnReanudar.setOnClickListener(v -> {
-            Intent intent = new Intent(PausaActivity.this, DemoActivity.class);
-            startActivity(intent);
+            Intent intent;
+            if ("DemoActivity".equals(origen)) {
+                intent = new Intent(PausaActivity.this, DemoActivity.class);
+            } else if ("ContrasenaActivity".equals(origen)) {
+                intent = new Intent(PausaActivity.this, ContrasenaActivity.class);
+            } else {
+                // Valor por defecto si no se reconoce el origen
+                intent = new Intent(PausaActivity.this, DemoActivity.class);
+            }            startActivity(intent);
         });
 
         ImageButton btnMenu = findViewById(R.id.btnMenu);
