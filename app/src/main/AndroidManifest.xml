@@ -52,6 +52,9 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".CreditosActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".PistaActivity"
+            android:screenOrientation="landscape"/>
+
 
 
     </application>
