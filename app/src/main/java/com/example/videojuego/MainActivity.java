@@ -65,8 +65,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(creditos);
         });
 
-        btnTienda.setOnClickListener(v ->
-                Toast.makeText(this, "Abrir Tienda", Toast.LENGTH_SHORT).show());
+        btnTienda.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TiendaActivity.class);
+            intent.putExtra("origen", "MainActivity");
+            startActivity(intent);
+        });
 
         btnSalir.setOnClickListener(v -> {
             Toast.makeText(this, "Saliendo del juego...", Toast.LENGTH_SHORT).show();

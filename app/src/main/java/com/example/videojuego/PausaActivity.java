@@ -47,7 +47,8 @@ public class PausaActivity extends AppCompatActivity{
             } else {
                 // Valor por defecto si no se reconoce el origen
                 intent = new Intent(PausaActivity.this, DemoActivity.class);
-            }            startActivity(intent);
+            }
+            startActivity(intent);
         });
 
         ImageButton btnMenu = findViewById(R.id.btnMenu);
@@ -60,6 +61,13 @@ public class PausaActivity extends AppCompatActivity{
         btnCreditos.setOnClickListener(v -> {
             Intent intent = new Intent(PausaActivity.this, CreditosActivity.class);
             intent.putExtra("desdePausa", true);  // importante
+            startActivity(intent);
+        });
+
+        ImageButton btnTienda = findViewById(R.id.btnTienda);
+        btnTienda.setOnClickListener(v -> {
+            Intent intent = new Intent(PausaActivity.this, TiendaActivity.class);
+            intent.putExtra("origen", "PausaActivity");
             startActivity(intent);
         });
 

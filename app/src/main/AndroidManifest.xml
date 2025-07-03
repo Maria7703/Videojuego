@@ -54,6 +54,8 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".PistaActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".TiendaActivity"
+            android:screenOrientation="landscape"/>
 
 
 
