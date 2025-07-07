@@ -30,10 +30,9 @@
         android:layout_marginTop="-25dp"
         android:background="@android:color/transparent"
         android:textColor="#00FFAA"
-        android:hint="Nombre de usuario"
         android:gravity="center"
         android:textSize="16sp"
-        android:inputType="textPassword"
+        android:inputType="textPassword|textCapCharacters"
        />
 
     <ImageButton
